@@ -1,34 +1,113 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-.nav-bar{
+
+/* for navbar */
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: sticky;
-    background-color:#000000;
+    padding-top: 39px;
+    background-color: #000000;
     color: #FFFFFF;
 }
 
-.nav-menue{
+.nav-menue {
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
+    gap: 21px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
 }
-.nav-icons{
+
+.nav-icons {
     display: flex;
     justify-content: space-around;
+    gap: 21px;
 }
-.hero{
+
+/* for hero section */
+.hero {
     display: flex;
     background-color: #000000;
     color: #FFFFFF;
+}
+
+/* for hero side section */
+.side {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    margin-right: 6%;
+    margin-top: 8%;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.colors h3 {
+    margin-top: 9%;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9%;
+}
+
+.size-adjuster {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 8%;
+}
+
+.detail {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9%;
+}
+
+.detail button {
+    height: 34px;
+    width: 168px;
+    background-color: maroon;
+    color: #FFFFFF;
+}
+
+/* for 3 images part */
+.img-3 {
+    width: 120px !important;
+    height: 120px !important;
+    position: absolute;
+    top: 90%;
+    display: flex;
+    left: 8%;
+    gap: 3%;
 }
 
 /* for discription part */
@@ -44,7 +123,7 @@ html,body{
 }
 
 .tab-button.active {
-    color: red;
+    color: #000000;
     border-bottom: 2px solid red;
 }
 
@@ -55,4 +134,81 @@ html,body{
 
 .tab-content.active {
     display: block;
+}
+
+/* for custimize part */
+.customize h1 {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0%;
+}
+
+.cycle-parts {
+    width: 90%;
+    margin: 3%;
+    margin-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cycle-parts h3 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 2%;
+}
+
+/* .part{
+    display: flex; 
+    justify-content: center;
+}
+.part h3{
+    text-align: baseline;
+} */
+.image-corner button {
+    width: 366px;
+    height: 63px;
+    top: 2438px;
+    left: 537px;
+    font-family: Barlow Condensed;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    background-color: #DD2828;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    /* gap: 2%; */
+    column-gap: 2%;
+    background-color: red;
+    margin: 5%;
+}
+
+.container-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 2%; */
+    column-gap: 2%;
+}
+
+.container-img img {
+    gap: 2%;
 }
